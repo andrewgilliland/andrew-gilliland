@@ -1,21 +1,81 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import BlogCard from "../components/BlogCard"
 
-import { ComingSoonStyles } from "../components/Layout/Layout"
+const Container = styled.div`
+  height: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+`
+
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: var(--spacing-8);
+`
+
+const H1 = styled.h1`
+  color: var(--grey-050);
+  letter-spacing: var(--tracking-wide);
+`
 
 const BlogPage = ({ data, location }) => {
+  const posts = data.allMarkdownRemark.nodes
+
   return (
     <Layout location={location}>
       <SEO title="Blog" />
-      <ComingSoonStyles>
-        <h1>Coming Soon!</h1>
-      </ComingSoonStyles>
+      <Container>
+        <H1>Latest Articles</H1>
+        <Grid>
+          {posts.map(post => {
+            const title = post.frontmatter.title || post.fields.slug
+            return (
+              <BlogCard
+                backgroundColor="var(--grey-900)"
+                key={post.fields.slug}
+                slug={post.fields.slug}
+                date={post.frontmatter.date}
+                description={post.frontmatter.description}
+                excerpt={post.excerpt}
+                title={title}
+                className="post-list-item"
+                itemScope
+                itemType="http://schema.org/Article"
+              />
+            )
+          })}
+        </Grid>
+      </Container>
     </Layout>
   )
 }
 
 export default BlogPage
+
+export const blogPageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      nodes {
+        excerpt
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          description
+        }
+      }
+    }
+  }
+`

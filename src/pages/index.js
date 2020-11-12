@@ -6,7 +6,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import CtaButton from "../components/CtaButton"
-import Button from "../components/Button"
+import BlogCard from "../components/BlogCard"
 
 const HeroSection = styled.section`
   background: var(--backgroundColor);
@@ -57,55 +57,6 @@ const H3 = styled.h3`
   margin-bottom: var(--spacing-12);
 `
 
-const H4 = styled.h4`
-  color: var(--grey-050);
-  font-size: 24px;
-  font-weight: var(--fontWeight-bold);
-  transition: all 0.3s ease;
-`
-
-const BlogCard = styled.article`
-  cursor: pointer;
-  margin-bottom: var(--spacing-12);
-
-  a {
-    color: var(--grey-050);
-  }
-
-  header {
-    margin-bottom: var(--spacing-2);
-  }
-
-  h4 {
-    margin-bottom: var(--spacing-1);
-  }
-
-  small {
-    color: var(--grey-500);
-    font-size: 14px;
-    font-weight: var(--fontWeight-semibold);
-    margin: 0;
-  }
-
-  p {
-    font-weight: var(--fontWeight-medium);
-    margin-bottom: var(--spacing-4);
-    max-width: 20em;
-  }
-
-  &:hover {
-    h4 {
-      color: var(--pink-vivid-500);
-    }
-  }
-
-  @media (min-width: 425px) {
-    p {
-      max-width: 30em;
-    }
-  }
-`
-
 const IndexPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
@@ -146,29 +97,18 @@ const IndexPage = ({ data, location }) => {
             const title = post.frontmatter.title || post.fields.slug
             return (
               <BlogCard
+                margin="0 0 var(--spacing-12) 0"
+                padding="0"
                 key={post.fields.slug}
+                slug={post.fields.slug}
+                date={post.frontmatter.date}
+                description={post.frontmatter.description}
+                excerpt={post.excerpt}
+                title={title}
                 className="post-list-item"
                 itemScope
                 itemType="http://schema.org/Article"
-              >
-                <Link to={post.fields.slug} itemProp="url">
-                  <header>
-                    <H4>
-                      <span itemProp="headline">{title}</span>
-                    </H4>
-                    <small>{post.frontmatter.date}</small>
-                  </header>
-                  <section>
-                    <p
-                      dangerouslySetInnerHTML={{
-                        __html: post.frontmatter.description || post.excerpt,
-                      }}
-                      itemProp="description"
-                    />
-                    <Button>Read More</Button>
-                  </section>
-                </Link>
-              </BlogCard>
+              />
             )
           })}
         </Container>
@@ -179,7 +119,7 @@ const IndexPage = ({ data, location }) => {
 
 export default IndexPage
 
-export const pageQuery = graphql`
+export const indexPageQuery = graphql`
   query {
     site {
       siteMetadata {
