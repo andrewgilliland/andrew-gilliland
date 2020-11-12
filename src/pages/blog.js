@@ -10,17 +10,23 @@ const Container = styled.div`
   height: 100%;
   max-width: var(--container-width);
   margin: 0 auto;
+  padding: 0 var(--spacing-5);
+
+  @media (min-width: 769px) {
+    padding: 0;
+  }
 `
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: var(--spacing-8);
 `
 
 const H1 = styled.h1`
   color: var(--grey-050);
   letter-spacing: var(--tracking-wide);
+  margin-bottom: var(--spacing-8);
 `
 
 const BlogPage = ({ data, location }) => {

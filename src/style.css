@@ -409,7 +409,7 @@ h5,
 h6 {
   font-family: var(--font-heading);
   line-height: var(--lineHeight-tight);
-  letter-spacing: -0.025em;
+  letter-spacing: var(--tracking-tight);
 }
 
 h2,

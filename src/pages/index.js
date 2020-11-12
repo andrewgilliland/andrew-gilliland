@@ -14,6 +14,7 @@ const HeroSection = styled.section`
 
   h1 {
     color: var(--h1Color);
+    margin-bottom: var(--spacing-4);
     font-size: 38px;
     letter-spacing: -0.2px;
   }
