@@ -29,11 +29,12 @@ const ContactFormStyles = styled.form`
 
   textarea {
     height: var(--spacing-48);
-    grid-column: span 4;
     background: var(--grey-900);
     border: none;
     border-radius: var(--rounded-md);
+    color: var(--grey-050);
     padding: var(--spacing-3);
+    grid-column: span 4;
 
     &:focus {
       outline: solid 3px var(--purple-vivid-500);
