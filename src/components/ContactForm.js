@@ -73,14 +73,14 @@ const ContactForm = () => {
       <input
         {...firstNameProps}
         type="text"
-        name="First Name"
+        name="first name"
         placeholder="First Name"
         required
       />
       <input
         {...lastNameProps}
         type="text"
-        name="Last Name"
+        name="last name"
         placeholder="Last Name"
         required
       />
@@ -94,17 +94,17 @@ const ContactForm = () => {
       <input
         {...companyNameProps}
         type="text"
-        name="Company Name"
+        name="company name"
         placeholder="Company Name"
         required
       />
       <textarea
         {...messageProps}
-        name="Message"
+        name="message"
         placeholder="Your message here..."
         required
       ></textarea>
-      <CtaButton>Submit</CtaButton>
+      <CtaButton type="submit">Submit</CtaButton>
     </ContactFormStyles>
   )
 }
