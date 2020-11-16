@@ -63,23 +63,43 @@ const ContactForm = () => {
   }
 
   return (
-    <ContactFormStyles onSubmit={submit}>
+    <ContactFormStyles
+      onSubmit={submit}
+      name="contact"
+      method="POST"
+      data-netlify="true"
+    >
       <input
         {...firstNameProps}
         type="text"
+        name="First Name"
         placeholder="First Name"
         required
       />
-      <input {...lastNameProps} type="text" placeholder="Last Name" required />
-      <input {...emailProps} type="email" placeholder="Email" required />
+      <input
+        {...lastNameProps}
+        type="text"
+        name="Last Name"
+        placeholder="Last Name"
+        required
+      />
+      <input
+        {...emailProps}
+        type="email"
+        name="email"
+        placeholder="Email"
+        required
+      />
       <input
         {...companyNameProps}
         type="text"
+        name="Company Name"
         placeholder="Company Name"
         required
       />
       <textarea
         {...messageProps}
+        name="Message"
         placeholder="Your message here..."
         required
       ></textarea>
