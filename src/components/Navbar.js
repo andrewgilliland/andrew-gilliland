@@ -36,7 +36,7 @@ const MainNav = styled.nav`
 
   .nav-btn {
     padding: 0.5rem 0.5rem;
-    background-color: var(--pink-vivid-500);
+    background-color: transparent;
     border: none;
     border-radius: 5px;
     box-shadow: var(--shadow-xl);
@@ -53,11 +53,11 @@ const MainNav = styled.nav`
   }
 
   .nav-svg {
-    height: 1.25rem;
-    width: 1.25rem;
+    height: 1.5rem;
+    width: 1.5rem;
 
     path {
-      fill: var(--grey-050);
+      fill: var(--pink-vivid-500);
     }
   }
 
@@ -129,7 +129,7 @@ const MainNav = styled.nav`
     z-index: -1;
   }
 
-  @media (min-width: 425px) {
+  @media (min-width: 426px) {
     .nav-btn {
       display: none;
     }

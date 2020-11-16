@@ -7,6 +7,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import CtaButton from "../components/CtaButton"
 import BlogCard from "../components/BlogCard"
+import { H3 } from "../components/Typography"
 
 const HeroSection = styled.section`
   background: var(--backgroundColor);
@@ -47,15 +48,6 @@ const Section = styled.section`
   border-radius: 5px;
   max-width: var(--container-width);
   margin: -1rem auto 5rem auto;
-`
-
-const H3 = styled.h3`
-  color: var(--purple-vivid-500);
-  font-size: 15px;
-  font-weight: var(--fontWeight-semibold);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: var(--spacing-12);
 `
 
 const IndexPage = ({ data, location }) => {

@@ -20,7 +20,7 @@ const NavLinkStyles = styled.ul`
     }
   }
 
-  @media (min-width: 425px) {
+  @media (min-width: 426px) {
     display: flex;
 
     a {

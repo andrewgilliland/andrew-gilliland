@@ -15,8 +15,8 @@ const H2 = styled.h2`
 
   background: linear-gradient(
     0deg,
-    var(--pink-vivid-400),
-    var(--pink-vivid-800)
+    var(--pink-vivid-500),
+    var(--pink-vivid-500)
   );
   -webkit-background-clip: text;
   background-clip: text;
