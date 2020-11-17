@@ -19,8 +19,8 @@ const ContactFormStyles = styled.form`
     grid-column: span 2;
 
     &:focus {
-      outline: solid 3px var(--purple-vivid-500);
-      -moz-outline-radius: 25px;
+      box-shadow: 0 0 0 2px var(--purple-vivid-500);
+      outline: 0;
     }
 
     @media (max-width: 425px) {
@@ -38,8 +38,8 @@ const ContactFormStyles = styled.form`
     grid-column: span 4;
 
     &:focus {
-      outline: solid 3px var(--purple-vivid-500);
-      -moz-outline-radius: 25px;
+      box-shadow: 0 0 0 2px var(--purple-vivid-500);
+      outline: 0;
     }
   }
 
