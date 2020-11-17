@@ -13,7 +13,7 @@ const H4 = styled.h4`
 
 const BlogCardStyles = styled.article`
   margin: ${props => props.margin || "0"};
-  padding: ${props => props.padding || "var(--spacing-10)"};
+  padding: ${props => props.padding || "var(--spacing-5)"};
   background-color: ${props => props.backgroundColor || "transparent"};
   border-radius: var(--rounded-lg);
   cursor: pointer;

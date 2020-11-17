@@ -6,10 +6,10 @@ const CtaButtonStyles = styled.button`
   border: none;
   border-radius: 32px;
   color: var(--grey-050);
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: var(--fontSize-1);
   font-weight: var(--fontWeight-semibold);
   margin-top: 1.25rem;
-  /* padding: 6px 10px; */
   padding: var(--spacing-3) var(--spacing-6);
   transition: all 150ms cubic-bezier(0.215, 0.61, 0.355, 1);
 
