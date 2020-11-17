@@ -1,4 +1,5 @@
 import React from "react"
+import { navigate } from "gatsby-link"
 import { useInput } from "../hooks/useInput"
 import styled from "styled-components"
 
@@ -47,6 +48,12 @@ const ContactFormStyles = styled.form`
   }
 `
 
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&")
+}
+
 const ContactForm = () => {
   const [firstNameProps, resetFirstName] = useInput("")
   const [lastNameProps, resetLastName] = useInput("")
@@ -56,6 +63,31 @@ const ContactForm = () => {
 
   const submit = e => {
     e.preventDefault()
+    const form = e.target
+
+    const firstName = firstNameProps.value
+    const lastName = lastNameProps.value
+    const email = emailProps.value
+    const companyName = companyNameProps.value
+    const message = messageProps.value
+
+    const data = {
+      "form-name": form.getAttribute("name"),
+      firstName,
+      lastName,
+      email,
+      companyName,
+      message,
+    }
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode(data),
+    })
+      .then(() => navigate(form.getAttribute("action")))
+      .catch(error => alert(error))
+
     resetFirstName("")
     resetLastName("")
     resetEmail("")
@@ -68,6 +100,7 @@ const ContactForm = () => {
       onSubmit={submit}
       name="contact"
       method="post"
+      action="/thanks"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
     >
