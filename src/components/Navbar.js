@@ -53,8 +53,8 @@ const MainNav = styled.nav`
   }
 
   .nav-svg {
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 1.75rem;
+    width: 1.75rem;
 
     path {
       fill: var(--pink-vivid-500);
@@ -86,8 +86,12 @@ const MainNav = styled.nav`
   }
 
   .nav-links {
-    text-align: center;
-    margin-top: 1.5rem;
+    font-size: var(--fontSize-3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: var(--spacing-8);
     padding: 0;
   }
 
