@@ -87,12 +87,6 @@ const ContactForm = () => {
     })
       .then(() => navigate(form.getAttribute("action")))
       .catch(error => alert(error))
-
-    resetFirstName("")
-    resetLastName("")
-    resetEmail("")
-    resetCompanyName("")
-    resetMessage("")
   }
 
   return (
@@ -108,14 +102,14 @@ const ContactForm = () => {
       <input
         {...firstNameProps}
         type="text"
-        name="first name"
+        name="firstName"
         placeholder="First Name"
         required
       />
       <input
         {...lastNameProps}
         type="text"
-        name="last name"
+        name="lastName"
         placeholder="Last Name"
         required
       />
@@ -129,7 +123,7 @@ const ContactForm = () => {
       <input
         {...companyNameProps}
         type="text"
-        name="company name"
+        name="companyName"
         placeholder="Company Name"
         required
       />
