@@ -43,7 +43,7 @@ const ContactFormStyles = styled.form`
   }
 
   button {
-    grid-column: span 2;
+    grid-column: 2 / span 2;
   }
 `
 
@@ -104,6 +104,7 @@ const ContactForm = () => {
         placeholder="Your message here..."
         required
       ></textarea>
+      <input type="hidden" name="form-name" value="contact" />
       <CtaButton type="submit">Submit</CtaButton>
     </ContactFormStyles>
   )
