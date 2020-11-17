@@ -67,9 +67,11 @@ const ContactForm = () => {
     <ContactFormStyles
       onSubmit={submit}
       name="contact"
-      method="POST"
+      method="post"
       data-netlify="true"
+      data-netlify-honeypot="bot-field"
     >
+      <input type="hidden" name="form-name" value="contact" />
       <input
         {...firstNameProps}
         type="text"
@@ -104,7 +106,6 @@ const ContactForm = () => {
         placeholder="Your message here..."
         required
       ></textarea>
-      <input type="hidden" name="form-name" value="contact" />
       <CtaButton type="submit">Submit</CtaButton>
     </ContactFormStyles>
   )
