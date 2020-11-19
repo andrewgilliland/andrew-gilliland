@@ -38,9 +38,7 @@ const MainNav = styled.nav`
     padding: 0.5rem 0.5rem;
     background-color: transparent;
     border: none;
-    border-radius: 5px;
-    box-shadow: var(--shadow-xl);
-    outline: none;
+    /* outline: none; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,6 +48,11 @@ const MainNav = styled.nav`
       transform: scale(1.1);
       box-shadow: var(--shadow-2xl);
     }
+  }
+
+  .nav-close {
+    margin-top: var(--spacing-2);
+    margin-right: var(--spacing-2);
   }
 
   .nav-svg {
@@ -66,15 +69,15 @@ const MainNav = styled.nav`
     flex-direction: column;
     align-items: center;
 
-    margin-top: 1rem;
+    margin-top: var(--spacing-4);
     position: fixed;
     top: 0;
     left: 5%;
 
-    height: 50vh;
+    /* height: 95vh; */
     width: 90%;
     background-color: var(--grey-900);
-    border-radius: 5px;
+    border-radius: var(--rounded-md);
     /* box-shadow: var(--shadow-lg); */
 
     transition: all 0.15s ease-in;
@@ -92,6 +95,7 @@ const MainNav = styled.nav`
     align-items: center;
     justify-content: center;
     margin-top: var(--spacing-8);
+    margin-bottom: var(--spacing-10);
     padding: 0;
   }
 
@@ -178,7 +182,7 @@ const Navbar = () => {
             onClick={toggle}
             onKeyPress={toggleKeyPress}
             type="button"
-            className="nav-btn align-end"
+            className="nav-close nav-btn align-end"
           >
             <svg className="nav-svg" viewBox="0 0 24 24">
               <path
