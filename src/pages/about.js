@@ -45,9 +45,28 @@ const AboutPage = ({ data, location }) => {
           <H3>Frameworks/Libraries</H3>
           <ul>
             <li>React</li>
+            <li>Gatsby</li>
+            <li>Next.js</li>
             <li>Express</li>
             <li>Bootstrap</li>
             <li>TailwindCSS</li>
+          </ul>
+          <H3>Databases</H3>
+          <ul>
+            <li>MongoDB</li>
+          </ul>
+          <H3>Services/API</H3>
+          <ul>
+            <li>AWS</li>
+            <li>Heroku</li>
+            <li>Netlify</li>
+            <li>Stripe</li>
+          </ul>
+          <H3>CMS</H3>
+          <ul>
+            <li>WordPress</li>
+            <li>Sanity</li>
+            <li>Netlify CMS</li>
           </ul>
         </Section>
       </Container>
