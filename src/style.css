@@ -539,7 +539,7 @@ table thead tr th {
 /* Link */
 
 a {
-  color: var(--color-primary);
+  color: var(--white);
   text-decoration: none;
 }
 
@@ -593,6 +593,10 @@ a:focus {
 
 .gatsby-highlight {
   margin-bottom: var(--spacing-8);
+  border-radius: 0.3em;
+  border: 2px solid var(--purple-500);
+  padding: 1em;
+  overflow: auto;
 }
 
 /* Media queries */

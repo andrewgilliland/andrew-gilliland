@@ -79,7 +79,9 @@ const IndexPage = ({ data, location }) => {
             and development to make beautiful and functional websites for your
             business.
           </p>
-          <CtaButton>Learn More</CtaButton>
+          <CtaButton>
+            <Link to="/blog">Read Articles</Link>
+          </CtaButton>
         </Container>
       </HeroSection>
 
@@ -97,6 +99,7 @@ const IndexPage = ({ data, location }) => {
                 date={post.frontmatter.date}
                 description={post.frontmatter.description}
                 excerpt={post.excerpt}
+                tags={post.frontmatter.tags}
                 title={title}
                 className="post-list-item"
                 itemScope
@@ -129,6 +132,7 @@ export const indexPageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          tags
         }
       }
     }

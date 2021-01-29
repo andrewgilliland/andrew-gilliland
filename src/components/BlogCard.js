@@ -30,11 +30,11 @@ const BlogCardStyles = styled.article`
     margin-bottom: var(--spacing-2);
   }
 
-  small {
+  .small {
     color: var(--grey-500);
     font-size: var(--fontSize-1);
     font-weight: var(--fontWeight-semibold);
-    margin: 0;
+    margin-top: 0.5rem;
   }
 
   p {
@@ -56,6 +56,16 @@ const BlogCardStyles = styled.article`
   }
 `
 
+const Tag = styled.span`
+  color: var(--green-vivid-900);
+  background-color: var(--green-vivid-300);
+  border-radius: var(--rounded-full);
+  font-size: 14px;
+  font-weight: var(--fontWeight-semibold);
+  margin-right: 1rem;
+  padding: 5px 8px;
+`
+
 const BlogCard = ({
   backgroundColor,
   margin,
@@ -64,6 +74,7 @@ const BlogCard = ({
   date,
   description,
   excerpt,
+  tags,
   title,
 }) => {
   return (
@@ -81,7 +92,11 @@ const BlogCard = ({
           <H4>
             <span itemProp="headline">{title}</span>
           </H4>
-          <small>{date}</small>
+          {tags.map(tag => (
+            <Tag>{tag}</Tag>
+          ))}
+          <br />
+          <div className="small">{date}</div>
         </header>
         <section>
           <p

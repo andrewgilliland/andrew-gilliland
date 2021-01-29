@@ -1,7 +1,8 @@
 ---
-title: Oh Boy, It's Big O Notation
+title: Getting Started with Big O Notation
 date: "2021-01-12T22:12:03.284Z"
 description: Understanding big O notation can be tricky, hopefully this article helps.
+tags: ["Algorithms", "JavaScript"]
 ---
 
 If you are around computing, programming, and/or web development long enough, you will hear the term big O notation come up. So what's it about? And why should learn about it? That's what this article is here to help explain.
@@ -21,13 +22,13 @@ Big O notation is a way to express the efficiency of your code, functions or alg
 When you see big O notation, you will see it represented in terms such as: O(1), O(logn), O(n), O(nlogn), and O(n²). These representations can be pretty intimidating and look very math intensive, so let's talk about it and calm your nerves.
 
 ###O(1)
-Constant
+The representation O(1) means that a algorithm runs in constant time in relation to the input. As the input value increases, the time that it takes for the algorithm to run remains constant. Let's look at an example function:
 
-<!-- ```javascript
-function add(a, b) {
-  return a + b
+```javascript
+function addUpTo(n) {
+  return (n * (n + 1)) / 2
 }
-``` -->
+```
 
 ###O(logn)
 Logarithmic

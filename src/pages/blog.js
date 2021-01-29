@@ -26,6 +26,7 @@ const BlogPage = ({ data, location }) => {
                 date={post.frontmatter.date}
                 description={post.frontmatter.description}
                 excerpt={post.excerpt}
+                tags={post.frontmatter.tags}
                 title={title}
                 className="post-list-item"
                 itemScope
@@ -58,6 +59,7 @@ export const blogPageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          tags
         }
       }
     }
