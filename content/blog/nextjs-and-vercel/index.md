@@ -5,7 +5,7 @@ description: How to get a Next.js project up and running with Vercel
 tags: ["Next.js"]
 ---
 
-> This article is a beginning of a series on my steps to create a SaaS product. As much as this is a guide to help me trace my thoughts, it will hopefully benefit those who look to go through the same journey. I am developing the SaaS project along with an [egghead.io](https://egghead.io/) portfolio project club.
+> This article is a beginning of a series on my steps to create a SaaS product. As much as this is a guide to help me trace my thoughts, it will hopefully benefit those who look to go through the similar journey. I am developing the SaaS project along with an [egghead.io](https://egghead.io/) portfolio project club. You can learn more about my project [here](https://github.com/andrewgilliland/react-fit/blob/master/README.md).
 
 There's a variety of ways to get web sites and web apps up and deployed, but creating and deploying a Next.js app on Vercel is a true delight. If you are wanting to get a static site up and running on the internet, this is a great solution. But don't think just because you have a static site created you can't have dynamic data coming in. With Vercel's serverless functions and/or using services in tandem with a Jamstack architecture, you can create web app functionality. And one of the best parts is that you can get a project up and going for free. Let's get started.
 
