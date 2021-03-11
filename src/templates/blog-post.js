@@ -22,13 +22,32 @@ const BlogPostStyles = styled.article`
   h5,
   h6 {
     color: var(--grey-050);
-    margin-bottom: var(--spacing-8);
+    margin-bottom: var(--spacing-4);
   }
 
   p {
     font-size: var(--fontSize-2);
     line-height: var(--lineHeight-relaxed);
     margin-bottom: var(--spacing-10);
+  }
+
+  a {
+    color: var(--pink-vivid-500);
+    border-bottom: 1px solid var(--pink-vivid-500);
+    transition: 0.3s opacity ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  ul {
+    list-style: disc inside;
+    margin-top: 0;
+    padding-left: 0;
+  }
+
+  li {
   }
 
   .date {

@@ -487,7 +487,6 @@ ol {
 
 ul li,
 ol li {
-  padding-left: var(--spacing-0);
   margin-bottom: calc(var(--spacing-8) / 2);
 }
 
@@ -500,7 +499,6 @@ li *:last-child {
 }
 
 li > ul {
-  margin-left: var(--spacing-8);
   margin-top: calc(var(--spacing-8) / 2);
 }
 
