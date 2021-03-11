@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { Link } from "gatsby"
 import styled from "styled-components"
 import PropTypes from "prop-types"
 
@@ -38,7 +38,6 @@ const MainNav = styled.nav`
     padding: 0.5rem 0.5rem;
     background-color: transparent;
     border: none;
-    /* outline: none; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,11 +73,10 @@ const MainNav = styled.nav`
     top: 0;
     left: 5%;
 
-    /* height: 95vh; */
     width: 90%;
-    background-color: var(--grey-900);
+    background: var(--black);
     border-radius: var(--rounded-md);
-    /* box-shadow: var(--shadow-lg); */
+    box-shadow: 1px 1px 1px var(--pink-vivid-500);
 
     transition: all 0.15s ease-in;
     transform-origin: top right;
@@ -209,6 +207,7 @@ const Navbar = () => {
         </div>
         <div
           onClick={toggle}
+          onKeyPress={toggleKeyPress}
           className={`background ${isOpen ? "visible" : "hidden"}`}
         />
       </MainNav>
