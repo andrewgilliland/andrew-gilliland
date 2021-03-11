@@ -1,0 +1,16 @@
+/* Scrollbar Styles */
+body::-webkit-scrollbar {
+  width: 12px;
+}
+html {
+  scrollbar-width: auto;
+  scrollbar-color: var(--purple-vivid-500);
+}
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--purple-vivid-900);
+  border-radius: var(--rounded-full);
+  /* border: 2px solid var(--white); */
+}

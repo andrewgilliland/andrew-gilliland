@@ -5,6 +5,7 @@ import "typeface-merriweather"
 import "./src/normalize.css"
 // custom CSS styles
 import "./src/style.css"
+import "./src/scrollbar.css"
 
 // Highlighting for code blocks
 require("prismjs/themes/prism-funky.css")
