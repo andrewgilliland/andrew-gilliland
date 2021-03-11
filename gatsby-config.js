@@ -3,10 +3,10 @@ module.exports = {
     title: `Andrew Gilliland`,
     author: {
       name: `Andrew Gilliland`,
-      summary: `who lives and works in Pensacola building useful things.`,
+      summary: `A web developer in Pensacola Florida.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `A blog by Andrew Gilliland.`,
+    siteUrl: `https://andrewgilliland.dev/`,
     social: {
       twitter: `droidgilliland`,
     },

@@ -1,1 +1,1 @@
-#Andrew Gilliland's personal website 🤖
+# Andrew Gilliland's personal website
