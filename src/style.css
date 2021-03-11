@@ -333,7 +333,6 @@
   --tracking-wider: 0.05em;
   --tracking-widest: 0.1em;
 
-  /* 1.200 Minor Third Type Scale */
   --fontSize-root: 16px;
   --fontSize-0: 0.833rem;
   --fontSize-1: 1rem;
@@ -342,7 +341,7 @@
   --fontSize-4: 1.728rem;
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
-  --fontSize-7: 2.986rem;
+  --fontSize-7: 3rem;
 
   /* Border Radius */
   --rounded-none: 0;

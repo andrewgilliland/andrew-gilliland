@@ -12,25 +12,35 @@ import { H3 } from "../components/Typography"
 const HeroSection = styled.section`
   background: var(--backgroundColor);
   padding-bottom: 3rem;
+`
 
-  h1 {
-    color: var(--h1Color);
-    margin-bottom: var(--spacing-4);
-    font-size: 38px;
-    letter-spacing: -0.2px;
+const PrimaryHeading = styled.h1`
+  color: white;
+
+  span {
+    color: transparent;
+    background-image: linear-gradient(
+      145deg,
+      var(--purple-vivid-500),
+      var(--pink-vivid-500)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
-  p {
-    color: var(--textColor);
-    font-size: 18px;
-    letter-spacing: 0.2px;
-    max-width: 20em;
-  }
+  margin-bottom: var(--spacing-4);
+  font-size: 3rem;
+  letter-spacing: -0.2px;
+`
+
+const Copy = styled.p`
+  color: var(--textColor);
+  font-size: var(--fontSize-2);
+  letter-spacing: 0.2px;
 
   @media (min-width: 425px) {
-    p {
-      max-width: 25em;
-    }
+    max-width: 25em;
   }
 `
 
@@ -39,8 +49,6 @@ const Container = styled.div`
   max-width: var(--container-width);
   margin: 0 auto;
   padding: 2rem;
-  border-left: 1px dashed var(--guideDashedColor);
-  border-right: 1px dashed var(--guideDashedColor);
 `
 
 const Section = styled.section`
@@ -73,14 +81,14 @@ const IndexPage = ({ data, location }) => {
       <SEO title="Home" />
       <HeroSection className="theme--Night">
         <Container>
-          <h1>Hi, I'm Andrew.</h1>
-          <p>
-            I build modern websites for growing businesses. Integrating design
-            and development to make beautiful and functional websites for your
-            business.
-          </p>
+          <PrimaryHeading>
+            Hello, I'm <br /> <span>Andrew</span>
+          </PrimaryHeading>
+          <Copy>
+           This website is for learning, building and sharing. Here you will find content around web development, JavaScript, CSS, React, and various other topics.
+          </Copy>
           <CtaButton>
-            <Link to="/blog">Read Articles</Link>
+            <Link to="/blog">Jump In</Link>
           </CtaButton>
         </Container>
       </HeroSection>
