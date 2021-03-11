@@ -20,7 +20,7 @@ const PrimaryHeading = styled.h1`
   span {
     color: transparent;
     background-image: linear-gradient(
-      145deg,
+      135deg,
       var(--purple-vivid-500),
       var(--pink-vivid-500)
     );

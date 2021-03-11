@@ -41,13 +41,13 @@ const MainNav = styled.nav`
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease-in;
-    
+
     &:hover {
       transform: scale(1.1);
       box-shadow: var(--shadow-2xl);
     }
   }
-  
+
   .nav-close {
     padding: 0.5rem 0.5rem;
     margin-top: var(--spacing-2);
@@ -157,7 +157,9 @@ const Navbar = () => {
     <>
       <MainNav>
         <NavbarStyles>
-          <Avatar />
+          <Link to="/">
+            <Avatar />
+          </Link>
 
           <NavLinks />
           <button
