@@ -1,6 +1,6 @@
 /* Scrollbar Styles */
 body::-webkit-scrollbar {
-  width: 12px;
+  width: 5px;
 }
 html {
   scrollbar-width: auto;
@@ -12,5 +12,4 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: var(--purple-vivid-900);
   border-radius: var(--rounded-full);
-  /* border: 2px solid var(--white); */
 }
