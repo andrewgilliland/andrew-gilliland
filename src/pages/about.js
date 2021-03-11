@@ -14,26 +14,38 @@ const Section = styled.section`
   padding: 2rem;
 `
 
+const AboutSectionStyles = styled.section`
+  a {
+    color: var(--pink-vivid-500);
+    border-bottom: 1px solid var(--pink-vivid-500);
+    transition: 0.3s opacity ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+`
+
 const AboutPage = ({ data, location }) => {
   return (
     <Layout location={location}>
       <SEO title="About" />
       <Container>
-        <section>
+        <AboutSectionStyles>
           <H1>Bienvenidos</H1>
           <Copy>
             I'm Andrew, I'm a web developer from Pensacola, Florida. I am
             passionate about constantly learning and using new web technologies.
             I currently work mainly with React on the front end and Node.js on
             the back end, but always enjoy implementing new technologies. In my
-            spare time, I am an organizer of{" "}
-            <a href="https://www.pensacoladevs.com/">Pensacola Developers</a>,
-            enjoy design, am an{" "}
-            <a href="https://www.pensacoladevs.com/">ACSM</a> Certified Personal
-            trainer, enjoy woodworking and am a music aficionado.
+            spare time, I help organize{" "}
+            <a href="https://www.pensacoladevs.com/">Pensacola Developers</a>, I
+            am an <a href="https://www.acsm.org/">ACSM</a> Certified Personal
+            trainer, bartend at the beach, enjoy woodworking and a avid music
+            aficionado.
           </Copy>
-        </section>
-        <Section>
+        </AboutSectionStyles>
+        {/* <Section>
           <H2>Technologies I Work With</H2>
           <H3>Languages</H3>
           <ul>
@@ -68,7 +80,7 @@ const AboutPage = ({ data, location }) => {
             <li>Sanity</li>
             <li>Netlify CMS</li>
           </ul>
-        </Section>
+        </Section> */}
       </Container>
     </Layout>
   )

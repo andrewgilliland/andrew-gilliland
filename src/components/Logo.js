@@ -43,7 +43,7 @@ const Logo = () => {
   return (
     <LogoStyles>
       <Avatar />
-      <Link to="/">{author?.name && <H2>{author.name}</H2>}</Link>
+      {/* <Link to="/">{author?.name && <H2>{author.name}</H2>}</Link> */}
     </LogoStyles>
   )
 }

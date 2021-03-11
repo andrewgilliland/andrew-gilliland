@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import PropTypes from "prop-types"
 
-import Logo from "./Logo"
+import Avatar from "./Avatar"
 import NavLinks from "./NavLinks"
 
 const NavbarStyles = styled.div`
@@ -35,28 +35,28 @@ const MainNav = styled.nav`
   }
 
   .nav-btn {
-    padding: 0.5rem 0.5rem;
     background-color: transparent;
     border: none;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease-in;
-
+    
     &:hover {
       transform: scale(1.1);
       box-shadow: var(--shadow-2xl);
     }
   }
-
+  
   .nav-close {
+    padding: 0.5rem 0.5rem;
     margin-top: var(--spacing-2);
     margin-right: var(--spacing-2);
   }
 
   .nav-svg {
-    height: 1.75rem;
-    width: 1.75rem;
+    height: 2rem;
+    width: 2rem;
 
     path {
       fill: var(--pink-vivid-500);
@@ -71,9 +71,9 @@ const MainNav = styled.nav`
     margin-top: var(--spacing-4);
     position: fixed;
     top: 0;
-    left: 5%;
+    left: 4%;
 
-    width: 90%;
+    width: 92%;
     background: var(--black);
     border-radius: var(--rounded-md);
     box-shadow: 1px 1px 1px var(--pink-vivid-500);
@@ -157,7 +157,7 @@ const Navbar = () => {
     <>
       <MainNav>
         <NavbarStyles>
-          <Logo />
+          <Avatar />
 
           <NavLinks />
           <button

@@ -6,7 +6,7 @@ import styled from "styled-components"
 const AvatarStyles = styled.div`
   .gatsby-image-wrapper {
     border-radius: 100%;
-    box-shadow: var(--shadow-inset);
+    box-shadow: 2px 2px var(--pink-vivid-500);
   }
 `
 
