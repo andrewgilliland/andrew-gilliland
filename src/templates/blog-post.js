@@ -33,11 +33,12 @@ const BlogPostStyles = styled.article`
 
   a {
     color: var(--pink-vivid-500);
-    border-bottom: 1px solid var(--pink-vivid-500);
-    transition: 0.3s opacity ease;
+    font-weight: var(--fontWeight-semibold);
+    transition: box-shadow 400ms ease 0s;
 
     &:hover {
-      opacity: 0.8;
+      transition: box-shadow 100ms ease 0s;
+      box-shadow: 0px 2px 0px var(--pink-vivid-500);
     }
   }
 
