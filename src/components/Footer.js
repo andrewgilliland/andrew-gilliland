@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa"
-import { Link } from "gatsby"
 
 const FooterStyles = styled.footer`
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgb(0, 0, 0)),
@@ -51,15 +50,15 @@ const Footer = () => {
     <FooterStyles>
       <Container>
         <Social>
-          <Link to="https://twitter.com/droidgilliland">
+          <a href="https://twitter.com/droidgilliland">
             <FaTwitter />
-          </Link>
-          <Link to="https://github.com/andrewgilliland">
+          </a>
+          <a href="https://github.com/andrewgilliland">
             <FaGithub />
-          </Link>
-          <Link to="https://www.linkedin.com/in/andrew-gilliland-a89b8919a/">
+          </a>
+          <a href="https://www.linkedin.com/in/andrew-gilliland-a89b8919a/">
             <FaLinkedin />
-          </Link>
+          </a>
         </Social>
         <CopyRight>© {new Date().getFullYear()} Andrew Gilliland</CopyRight>
       </Container>

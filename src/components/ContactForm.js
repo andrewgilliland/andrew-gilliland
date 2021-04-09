@@ -55,11 +55,11 @@ const encode = data => {
 }
 
 const ContactForm = () => {
-  const [firstNameProps, resetFirstName] = useInput("")
-  const [lastNameProps, resetLastName] = useInput("")
-  const [emailProps, resetEmail] = useInput("")
-  const [companyNameProps, resetCompanyName] = useInput("")
-  const [messageProps, resetMessage] = useInput("")
+  const [firstNameProps] = useInput("")
+  const [lastNameProps] = useInput("")
+  const [emailProps] = useInput("")
+  const [companyNameProps] = useInput("")
+  const [messageProps] = useInput("")
 
   const submit = e => {
     e.preventDefault()

@@ -27,7 +27,6 @@ const rainbowColors = [
   "#1cd4d4",
   // blue
   "#0967d2",
-  
 ]
 const paletteSize = rainbowColors.length
 const WINDOW_SIZE = 3
@@ -68,7 +67,7 @@ const useRainbow = ({ intervalDelay = 2000 }) => {
         inherits: false,
       })
     })
-  }, [uniqueId, isEnabled])
+  }, [WINDOW_SIZE, isEnabled])
 
   const intervalCount = useIncrementingNumber(intervalDelay)
 
