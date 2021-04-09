@@ -15,8 +15,8 @@ const RainbowHeading = ({ children, intervalDelay = 1300, ...delegated }) => {
       {...delegated}
       style={{
         ...colors,
-        color: `transparent`,
-        backgroundClip: `text`,
+        // color: `transparent`,
+        // backgroundClip: `text`,
 
         transition: `
           ${colorKeys[0]} ${transitionDelay}ms linear,

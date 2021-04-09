@@ -5,27 +5,27 @@ import { range, generateId } from "../utils/index"
 import useIncrementingNumber from "./useIncrementingNumber"
 
 const rainbowColors = [
-  // "hsl(1deg, 96%, 55%)", // red
+  // red
   "#E12D39",
-  // "hsl(25deg, 100%, 50%)", // orange
+  // orange
   "#F35627",
-  // "hsl(40deg, 100%, 50%)", // yellow
+  // yellow
   "#F7C948",
-  // "hsl(45deg, 100%, 50%)", // yellow
+  // yellow
   "#F0B429",
-  // "hsl(66deg, 100%, 45%)", // lime
-  "#6cd410", // lime green
-  // "hsl(130deg, 100%, 40%)", // green
+  // lime green
+  "#6cd410",
+  // green
   "#18981d",
-  // "hsl(177deg, 100%, 35%)", // aqua
-  "#1cd4d4", // cyan
-  // "hsl(230deg, 100%, 45%)", // blue
+  // cyan
+  "#1cd4d4",
+  // blue
   "#0967d2",
-  // "hsl(240deg, 100%, 45%)", // indigo
+  // indigo
   "#2251CC",
-  // "hsl(260deg, 100%, 55%)", // violet
+  // violet
   "#8719e0",
-  // "hsl(325deg, 100%, 48%)", // pink
+  // pink
   "#da127d",
 ]
 const paletteSize = rainbowColors.length
@@ -67,7 +67,7 @@ const useRainbow = ({ intervalDelay = 2000 }) => {
         inherits: false,
       })
     })
-  }, [WINDOW_SIZE, isEnabled])
+  }, [uniqueId, isEnabled])
 
   const intervalCount = useIncrementingNumber(intervalDelay)
 
