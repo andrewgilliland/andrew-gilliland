@@ -8,6 +8,7 @@ import SEO from "../components/seo"
 import CtaButton from "../components/CtaButton"
 import BlogCard from "../components/BlogCard"
 import { H3 } from "../components/Typography"
+import RainbowHeading from "../components/RainbowHeading"
 
 const HeroSection = styled.section`
   background: var(--backgroundColor);
@@ -82,10 +83,12 @@ const IndexPage = ({ data, location }) => {
       <HeroSection className="theme--Night">
         <Container>
           <PrimaryHeading>
-            Hello, I'm <br /> <span>Andrew</span>
+            Hello, I'm <br /> <RainbowHeading>Andrew</RainbowHeading>
           </PrimaryHeading>
           <Copy>
-           This website is for learning, building and sharing. Here you will find content around web development, JavaScript, CSS, React, and various other topics.
+            This website is for learning, building and sharing. Here you will
+            find content around web development, JavaScript, CSS, React, and
+            various other topics.
           </Copy>
           <CtaButton>
             <Link to="/blog">Jump In</Link>
