@@ -82,7 +82,7 @@ const BlogCard = ({
       backgroundColor={backgroundColor}
       margin={margin}
       padding={padding}
-      key={slug}
+      // key={slug}
       className="post-list-item"
       itemScope
       itemType="http://schema.org/Article"
@@ -92,8 +92,8 @@ const BlogCard = ({
           <H4>
             <span itemProp="headline">{title}</span>
           </H4>
-          {tags.map(tag => (
-            <Tag>{tag}</Tag>
+          {tags.map((tag, i) => (
+            <Tag key={i}>{tag}</Tag>
           ))}
           <br />
           <div className="small">{date}</div>

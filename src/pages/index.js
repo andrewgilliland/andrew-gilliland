@@ -99,13 +99,13 @@ const IndexPage = ({ data, location }) => {
       <Section>
         <Container>
           <H3>Recently Published</H3>
-          {posts.map(post => {
+          {posts.map((post, index) => {
             const title = post.frontmatter.title || post.fields.slug
             return (
               <BlogCard
                 margin="0 0 var(--spacing-12) 0"
                 padding="0"
-                key={post.fields.slug}
+                key={index}
                 slug={post.fields.slug}
                 date={post.frontmatter.date}
                 description={post.frontmatter.description}

@@ -76,7 +76,7 @@ const MainNav = styled.nav`
     width: 92%;
     background: var(--black);
     border-radius: var(--rounded-md);
-    box-shadow: 1px 1px 1px var(--pink-vivid-500);
+    box-shadow: 2px 4px 1px var(--pink-vivid-500);
 
     transition: all 0.15s ease-in;
     transform-origin: top right;
@@ -215,6 +215,7 @@ const Navbar = () => {
           onClick={toggle}
           onKeyPress={toggleKeyPress}
           className={`background ${isOpen ? "visible" : "hidden"}`}
+          role="dialog"
         />
       </MainNav>
     </>
