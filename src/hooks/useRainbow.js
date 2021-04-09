@@ -5,6 +5,12 @@ import { range, generateId } from "../utils/index"
 import useIncrementingNumber from "./useIncrementingNumber"
 
 const rainbowColors = [
+  // indigo
+  "#2251CC",
+  // violet
+  "#8719e0",
+  // pink
+  "#da127d",
   // red
   "#E12D39",
   // orange
@@ -21,12 +27,7 @@ const rainbowColors = [
   "#1cd4d4",
   // blue
   "#0967d2",
-  // indigo
-  "#2251CC",
-  // violet
-  "#8719e0",
-  // pink
-  "#da127d",
+  
 ]
 const paletteSize = rainbowColors.length
 const WINDOW_SIZE = 3
