@@ -22,7 +22,7 @@ const MainNav = styled.nav`
 
   a {
     color: var(--grey-050);
-    font-weight: var(--font-semibold);
+    font-weight: var(--fontWeight-semibold);
     transition: color 0.3s ease-in;
 
     &:visited {
@@ -137,6 +137,10 @@ const MainNav = styled.nav`
 
   @media (min-width: 426px) {
     .nav-btn {
+      display: none;
+    }
+    
+    .nav-links {
       display: none;
     }
   }
