@@ -22,9 +22,17 @@ export const H3 = styled.h3`
   margin-bottom: var(--spacing-12);
 `
 
+export const H4 = styled.h4`
+  color: var(--grey-050);
+  font-size: var(--fontSize-3);
+  font-weight: var(--fontWeight-bold);
+  transition: all 0.3s ease;
+`
+
 export const Copy = styled.p`
   color: var(--textColor);
   font-size: 18px;
   letter-spacing: 0.2px;
   max-width: 35em;
 `
+

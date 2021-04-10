@@ -2,15 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
+import { H4 } from "./Typography"
 import Button from "./Button"
-import Tag from './Tag'
-
-const H4 = styled.h4`
-  color: var(--grey-050);
-  font-size: var(--fontSize-3);
-  font-weight: var(--fontWeight-bold);
-  transition: all 0.3s ease;
-`
+import Tag from "./Tag"
 
 const BlogCardStyles = styled.article`
   margin: var(--margin, 0);
