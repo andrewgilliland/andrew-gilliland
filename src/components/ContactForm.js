@@ -3,7 +3,7 @@ import { navigate } from "gatsby-link"
 import { useInput } from "../hooks/useInput"
 import styled from "styled-components"
 
-import CtaButton from "../components/CtaButton"
+import BubbleButton from "../components/BubbleButton"
 
 const ContactFormStyles = styled.form`
   display: grid;
@@ -133,7 +133,7 @@ const ContactForm = () => {
         placeholder="Your message here..."
         required
       ></textarea>
-      <CtaButton type="submit">Submit</CtaButton>
+      <BubbleButton type="submit">Submit</BubbleButton>
     </ContactFormStyles>
   )
 }

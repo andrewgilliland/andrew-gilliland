@@ -20,7 +20,7 @@ const BlogPage = ({ data, location }) => {
             const title = post.frontmatter.title || post.fields.slug
             return (
               <BlogCard
-                backgroundColor="var(--grey-900)"
+                backgroundColor="var(--grey-1000)"
                 key={post.fields.slug}
                 slug={post.fields.slug}
                 date={post.frontmatter.date}

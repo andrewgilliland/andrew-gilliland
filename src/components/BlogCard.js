@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 import Button from "./Button"
+import Tag from './Tag'
 
 const H4 = styled.h4`
   color: var(--grey-050);
@@ -12,7 +13,7 @@ const H4 = styled.h4`
 `
 
 const BlogCardStyles = styled.article`
-  margin: ${props => props.margin || "0"};
+  margin: var(--margin, 0);
   padding: ${props => props.padding || "var(--spacing-8)"};
   background-color: ${props => props.backgroundColor || "transparent"};
   border-radius: var(--rounded-lg);
@@ -56,16 +57,6 @@ const BlogCardStyles = styled.article`
   }
 `
 
-const Tag = styled.span`
-  color: var(--green-vivid-900);
-  background-color: var(--green-vivid-300);
-  border-radius: var(--rounded-full);
-  font-size: 14px;
-  font-weight: var(--fontWeight-semibold);
-  margin-right: 1rem;
-  padding: 5px 8px;
-`
-
 const BlogCard = ({
   backgroundColor,
   margin,
@@ -82,10 +73,10 @@ const BlogCard = ({
       backgroundColor={backgroundColor}
       margin={margin}
       padding={padding}
-      // key={slug}
       className="post-list-item"
       itemScope
       itemType="http://schema.org/Article"
+      style={{ "--margin": margin }}
     >
       <Link to={slug} itemProp="url">
         <header>

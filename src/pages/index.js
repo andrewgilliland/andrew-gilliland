@@ -5,7 +5,7 @@ import styled from "styled-components"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import CtaButton from "../components/CtaButton"
+import BubbleButton from "../components/BubbleButton"
 import BlogCard from "../components/BlogCard"
 import { H3 } from "../components/Typography"
 import RainbowHeading from "../components/RainbowHeading"
@@ -86,13 +86,13 @@ const IndexPage = ({ data, location }) => {
             Hello, I'm <br /> <RainbowHeading>Andrew</RainbowHeading>
           </PrimaryHeading>
           <Copy>
-            This website is for learning, building and sharing. Here you will
+            This website is for learning, building, and sharing. Here you will
             find content around web development, JavaScript, CSS, React, and
-            various other topics.
+            various other web development topics.
           </Copy>
-          <CtaButton>
+          <BubbleButton>
             <Link to="/blog">Jump In</Link>
-          </CtaButton>
+          </BubbleButton>
         </Container>
       </HeroSection>
 
