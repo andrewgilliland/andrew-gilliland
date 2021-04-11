@@ -40,7 +40,7 @@ const BlogCardStyles = styled.article`
 
   &:hover {
     h4 {
-      color: var(--pink-vivid-500);
+      color: var(--grey-300);
     }
   }
 

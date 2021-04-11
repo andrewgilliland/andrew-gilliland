@@ -2,13 +2,12 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
-const NavLinkStyles = styled.ul`
+const NavLinksStyles = styled.ul`
   display: none;
   margin-top: 1.5rem;
 
   a {
     color: var(--grey-050);
-    font-weight: var(--font-semibold);
     transition: color 0.3s ease-in;
 
     &:visited {
@@ -31,7 +30,7 @@ const NavLinkStyles = styled.ul`
 
 const NavLinks = () => {
   return (
-    <NavLinkStyles>
+    <NavLinksStyles>
       <li>
         <Link to="/projects">Projects</Link>
       </li>
@@ -44,7 +43,7 @@ const NavLinks = () => {
       <li>
         <Link to="/contact">Contact</Link>
       </li>
-    </NavLinkStyles>
+    </NavLinksStyles>
   )
 }
 
