@@ -29,6 +29,7 @@ function Dropdown() {
       <Tag>Next.js</Tag>
       <Tag>TypeScript</Tag>
       <Tag>Node.js</Tag>
+      <Tag>GraphQL</Tag>
     </DropdownStyles>
   )
 }

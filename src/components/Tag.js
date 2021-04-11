@@ -25,6 +25,10 @@ const TagStyles = styled.span`
     --color: var(--lime-green-vivid-400);
   }
 
+  &.graphql {
+    --color: var(--orange-vivid-400);
+  }
+
   color: var(--color, var(--green-vivid-400));
   background-color: var(--black);
   border-radius: var(--rounded-full);
@@ -64,6 +68,8 @@ function Tag({ children, color }) {
           ? "typescript"
           : children === "Node.js"
           ? "nodejs"
+          : children === "GraphQL"
+          ? "graphql"
           : ""
       }`}
       style={{ "--color": color }}
