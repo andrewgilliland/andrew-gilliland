@@ -6,10 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const BlogPostStyles = styled.article`
-  max-width: var(--container-width);
-  max-width: 35em;
   margin: 0 auto;
-  padding: var(--spacing-5);
 
   h1 {
     color: var(--grey-050);
@@ -48,12 +45,30 @@ const BlogPostStyles = styled.article`
     padding-left: 0;
   }
 
-  li {
-  }
-
   .date {
     font-size: var(--fontSize-1);
     color: var(--grey-500);
+  }
+`
+
+const ArticleWrapper = styled.div`
+  display: grid;
+  grid-template-columns:
+    1fr
+    min(65ch, calc(100% - 64px)) // calc function prevents horizontal scroll
+    1fr;
+  // substitution for padding
+  grid-column-gap: 32px;
+
+  & > * {
+    grid-column: 2;
+  }
+
+  // Does not work if class is used in the markdown
+  // TODO: Make component for MDX
+  .full-bleed {
+    width: 100%;
+    grid-column: 1 / -1;
   }
 `
 
@@ -68,14 +83,16 @@ const BlogPostTemplate = ({ data, location }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <BlogPostStyles itemScope itemType="http://schema.org/Article">
-        <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p className="date">{post.frontmatter.date}</p>
-        </header>
-        <section
-          dangerouslySetInnerHTML={{ __html: post.html }}
-          itemProp="articleBody"
-        />
+        <ArticleWrapper>
+          <header>
+            <h1 itemProp="headline">{post.frontmatter.title}</h1>
+            <p className="date">{post.frontmatter.date}</p>
+          </header>
+          <section
+            dangerouslySetInnerHTML={{ __html: post.html }}
+            itemProp="articleBody"
+          />
+        </ArticleWrapper>
       </BlogPostStyles>
     </Layout>
   )
