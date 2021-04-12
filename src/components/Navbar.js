@@ -75,8 +75,10 @@ const MainNav = styled.nav`
 
     width: 92%;
     background: var(--black);
+    border: 1px solid;
+    border-color: var(--pink-vivid-500);
     border-radius: var(--rounded-md);
-    box-shadow: 2px 4px 1px var(--pink-vivid-500);
+    box-shadow: 2px 4px var(--pink-vivid-500);
 
     transition: all 0.15s ease-in;
     transform-origin: top right;
@@ -139,7 +141,7 @@ const MainNav = styled.nav`
     .nav-btn {
       display: none;
     }
-    
+
     .nav-links {
       display: none;
     }
