@@ -1,6 +1,5 @@
-import React, { useState } from "react"
 
-function getInitialColorMode() {
+export function getInitialColorMode() {
   const persistedColorPrefence = window.localStorage.getItem("color-mode")
   const hasPersistedPreference = typeof persistedColorPrefence === "string"
 
@@ -22,24 +21,4 @@ function getInitialColorMode() {
   // If they are using a browser/OS that doesn't support
   // color themes, let's default to 'light'.
   return "light"
-}
-
-
-export const ThemeContext = React.createContext()
-
-export const ThemeProvider = ({ children }) => {
-  const [colorMode, rawSetColorMode] = useState(getInitialColorMode)
-
-  const setColorMode = value => {
-    rawSetColorMode(value)
-
-    // Persist it on update
-    window.localStorage.setItem("color-mode", value)
-  }
-
-  return (
-    <ThemeContext.Provider value={{ colorMode, setColorMode }}>
-      {children}
-    </ThemeContext.Provider>
-  )
 }
