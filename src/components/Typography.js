@@ -30,9 +30,7 @@ export const H4 = styled.h4`
 `
 
 export const Copy = styled.p`
-  color: var(--textColor);
   font-size: 18px;
   letter-spacing: 0.2px;
-  max-width: 35em;
 `
 

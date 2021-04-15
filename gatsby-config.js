@@ -28,6 +28,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
@@ -70,6 +76,7 @@ module.exports = {
         icon: `content/assets/andrew-gilliland-icon.png`,
       },
     },
+
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
