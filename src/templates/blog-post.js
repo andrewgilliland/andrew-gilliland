@@ -31,7 +31,7 @@ const BlogPostStyles = styled.article`
 
   a {
     color: var(--pink-vivid-500);
-    font-weight: var(--fontWeight-semibold);
+    font-weight: var(--font-semibold);
     transition: box-shadow 400ms ease 0s;
 
     &:hover {

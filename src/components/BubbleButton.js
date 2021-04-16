@@ -10,7 +10,7 @@ const BubbleButtonStyles = styled.button`
   color: var(--color, var(--grey-050));
   cursor: pointer;
   font-size: var(--fontSize-1);
-  font-weight: var(--fontWeight-semibold);
+  font-weight: var(--font-semibold);
   margin-top: var(--marginTop, var(--spacing-5));
   outline-offset: 8px;
   padding: var(--spacing-3) var(--spacing-6);

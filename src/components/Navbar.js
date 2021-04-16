@@ -22,7 +22,7 @@ const MainNav = styled.nav`
 
   a {
     color: var(--grey-050);
-    font-weight: var(--fontWeight-semibold);
+    font-weight: var(--font-semibold);
     transition: color 0.3s ease-in;
 
     &:visited {

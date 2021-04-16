@@ -7,7 +7,7 @@ export const NavLinkStyles = styled.a`
   position: relative;
   color: var(--grey-050);
   /* cursor: pointer; */
-  font-weight: var(--fontWeight-semibold);
+  font-weight: var(--font-semibold);
   transition: color 0.3s ease-in;
 
   &:visited {

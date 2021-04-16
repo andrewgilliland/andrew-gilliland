@@ -28,12 +28,12 @@ const BlogCardStyles = styled.article`
   .small {
     color: var(--grey-500);
     font-size: var(--fontSize-1);
-    font-weight: var(--fontWeight-semibold);
+    font-weight: var(--font-semibold);
     margin-top: 0.5rem;
   }
 
   p {
-    font-weight: var(--fontWeight-medium);
+    font-weight: var(--font-medium);
     margin-bottom: var(--spacing-4);
     max-width: 20em;
   }

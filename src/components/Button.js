@@ -7,7 +7,7 @@ const ButtonStyles = styled.button`
   padding: 0;
   color: var(--pink-vivid-500);
   font-size: var(--fontSize-1);
-  font-weight: var(--fontWeight-semibold);
+  font-weight: var(--font-semibold);
   transition: all 150ms cubic-bezier(0.215, 0.61, 0.355, 1);
 
   &:hover {

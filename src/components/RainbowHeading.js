@@ -48,7 +48,7 @@ const RainbowHeadingStyles = styled.span`
   border: none;
   border-radius: var(--rounded-lg);
   color: white;
-  font-weight: var(--fontWeight-semibold);
+  font-weight: var(--font-semibold);
   padding: 12px 24px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15); */
 `

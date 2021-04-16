@@ -37,7 +37,7 @@ const TagStyles = styled.span`
   box-shadow: 1px 2px var(--color, var(--green-vivid-400));
   display: inline-block;
   font-size: 14px;
-  font-weight: var(--fontWeight-semibold);
+  font-weight: var(--font-semibold);
   margin-bottom: 1rem;
   margin-right: 0.5rem;
   padding: 5px 10px;

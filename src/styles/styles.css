@@ -1,7 +1,6 @@
 /* CSS Custom Properties Definitions */
 
 :root {
-  
   --backgroundNight: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgb(0, 0, 0)),
     linear-gradient(90deg, rgb(255, 0, 136), rgb(0, 153, 255));
 
@@ -45,12 +44,12 @@
   --font-heading: var(--font-sohne);
   --font-body: var(--font-sohne);
 
-  --fontWeight-normal: 400;
-  --fontWeight-medium: 500;
-  --fontWeight-semibold: 600;
-  --fontWeight-bold: 700;
-  --fontWeight-extrabold: 800;
-  --fontWeight-black: 900;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  --font-black: 900;
 
   --lineHeight-none: 1;
   --lineHeight-tight: 1.1;
@@ -148,12 +147,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: var(--fontWeight-semibold);
+  font-weight: var(--font-semibold);
   color: var(--color-heading);
 }
 
 h1 {
-  font-weight: var(--fontWeight-semibold);
+  font-weight: var(--font-semibold);
   font-size: var(--fontSize-6);
   color: var(--color-heading-black);
 }
@@ -298,7 +297,7 @@ a:focus {
 }
 
 .header-link-home {
-  font-weight: var(--fontWeight-bold);
+  font-weight: var(--font-bold);
   font-family: var(--font-heading);
   text-decoration: none;
   font-size: var(--fontSize-2);
