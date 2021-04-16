@@ -38,7 +38,7 @@ const TagStyles = styled.span`
   display: inline-block;
   font-size: 14px;
   font-weight: var(--font-semibold);
-  margin-bottom: 1rem;
+  margin-bottom: var(--marginBottom, 1rem);
   margin-right: 0.5rem;
   padding: 5px 10px;
   transition: all 0.3s ease;
@@ -50,7 +50,7 @@ const TagStyles = styled.span`
   }
 `
 
-function Tag({ children, color }) {
+function Tag({ children, color, marginBottom }) {
   return (
     <TagStyles
       className={`${
@@ -72,7 +72,7 @@ function Tag({ children, color }) {
           ? "graphql"
           : ""
       }`}
-      style={{ "--color": color }}
+      style={{ "--color": color, "--marginBottom": marginBottom }}
     >
       {children}
     </TagStyles>

@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { FaGithub } from "react-icons/fa"
 
+import Tag from "./Tag"
 import BubbleButton from "./BubbleButton"
 
 const ProjectCardStyles = styled.div`
@@ -12,6 +13,9 @@ const ProjectCardStyles = styled.div`
   max-width: 50%;
 
   .card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 2px solid;
     border-color: var(--pink-500);
     font-weight: var(--font-semibold);
@@ -53,7 +57,10 @@ const GithubStyles = styled.div`
 const ProjectCard = ({ children, title }) => {
   return (
     <ProjectCardStyles>
-      <div className="card-head">{title}</div>
+      <div className="card-head">
+        <h3>{title}</h3>
+        <Tag marginBottom="0">Next.js</Tag>
+      </div>
       <div className="card-body">{children}</div>
       <div className="card-footer">
         <a href="https://react-fit.vercel.app/">

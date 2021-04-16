@@ -138,23 +138,13 @@ h4,
 h5,
 h6 {
   font-family: var(--font-heading);
+  font-weight: var(--font-semibold);
   line-height: var(--lineHeight-tight);
   letter-spacing: var(--tracking-tight);
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: var(--font-semibold);
-  color: var(--color-heading);
-}
-
 h1 {
-  font-weight: var(--font-semibold);
   font-size: var(--fontSize-6);
-  color: var(--color-heading-black);
 }
 
 h2 {
@@ -338,23 +328,6 @@ a:focus {
   ol {
     list-style-position: inside;
   }
-}
-
-.theme--Ice {
-  --backgroundColor: #0a2540;
-
-  --h1Color: #fff;
-  --h2Color: #00d4ff;
-  --textColor: #adbdcc;
-
-  --accentColor: #02bcf5;
-  --linkColor: var(--accentColor);
-  --linkHoverColor: #fff;
-
-  --buttonColor: var(--accentColor);
-  --buttonHoverColor: #fff;
-
-  --guideDashedColor: rgba(66, 71, 112, 0.3);
 }
 
 .theme--Night {
