@@ -8,7 +8,7 @@ import { H1 } from "../components/Typography"
 import { Container, Grid } from "../components/Layout/Layout"
 
 const BlogPage = ({ data, location }) => {
-  const posts = data.allMarkdownRemark.nodes
+  const posts = data.allMdx.nodes
 
   return (
     <Layout location={location}>
@@ -49,7 +49,7 @@ export const blogPageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
       nodes {
         excerpt
         fields {
