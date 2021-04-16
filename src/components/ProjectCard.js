@@ -10,7 +10,11 @@ const ProjectCardStyles = styled.div`
   border-color: var(--pink-vivid-500);
   border-radius: var(--rounded-md);
   box-shadow: 2px 2px 0 var(--pink-vivid-500);
-  max-width: 50%;
+  max-width: 100%;
+
+  @media only screen and (min-width: 426px) {
+    max-width: 50%;
+  }
 
   .card-head {
     display: flex;
