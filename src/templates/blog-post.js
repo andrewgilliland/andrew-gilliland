@@ -30,13 +30,13 @@ const BlogPostStyles = styled.article`
   }
 
   a {
-    color: var(--pink-vivid-500);
+    color: var(--purple-vivid-500);
     font-weight: var(--font-semibold);
     transition: box-shadow 400ms ease 0s;
 
     &:hover {
       transition: box-shadow 100ms ease 0s;
-      box-shadow: 0px 2px 0px var(--pink-vivid-500);
+      box-shadow: 0px 2px 0px var(--purple-vivid-500);
     }
   }
 
