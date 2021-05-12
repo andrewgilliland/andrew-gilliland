@@ -15,8 +15,6 @@ const RainbowHeading = ({ children, intervalDelay = 1300, ...delegated }) => {
       {...delegated}
       style={{
         ...colors,
-        // color: `transparent`,
-        // backgroundClip: `text`,
 
         transition: `
           ${colorKeys[0]} ${transitionDelay}ms linear,
@@ -43,14 +41,6 @@ const RainbowHeadingStyles = styled.span`
   color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
-  /* position: relative;
-  border: none;
-  border-radius: var(--rounded-lg);
-  color: white;
-  font-weight: var(--font-semibold);
-  padding: 12px 24px;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15); */
 `
 
 export default RainbowHeading

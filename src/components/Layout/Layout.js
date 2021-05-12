@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
-export const ComingSoonStyles = styled.section`
-  height: 55vh;
+export const CenterContentStyles = styled.section`
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

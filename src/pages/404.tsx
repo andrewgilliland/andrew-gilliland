@@ -1,8 +1,9 @@
 import React from "react"
 import { PageProps, graphql } from "gatsby"
-import styled from "styled-components"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { CenterContentStyles } from "../components/Layout/Layout"
 
 type DataProps = {
   site: {
@@ -12,23 +13,16 @@ type DataProps = {
   }
 }
 
-const NotFoundPageStyles = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`
-
 const NotFoundPage: React.FC<PageProps<DataProps>> = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="404: Not Found" />
-      <NotFoundPageStyles>
-        <h1>404: Not Found</h1>
-        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-      </NotFoundPageStyles>
+      <SEO title="Page Not Found" />
+      <CenterContentStyles>
+        <h1>Page Not Found</h1>
+        <p>This isn't the page you're looking for.</p>
+      </CenterContentStyles>
     </Layout>
   )
 }
