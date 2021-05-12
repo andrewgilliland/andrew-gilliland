@@ -8,9 +8,11 @@ import Tag from "./Tag"
 
 const BlogCardStyles = styled.article`
   margin: var(--margin, 0);
+  border: 2px solid var(--grey-800);
+  border-radius: var(--rounded-md);
+  box-shadow: 2px 2px 0 var(--grey-800);
   padding: ${props => props.padding || "var(--spacing-8)"};
   background-color: ${props => props.backgroundColor || "transparent"};
-  border-radius: var(--rounded-lg);
   cursor: pointer;
 
   a {
@@ -25,7 +27,7 @@ const BlogCardStyles = styled.article`
     margin-bottom: var(--spacing-2);
   }
 
-  .small {
+  .date {
     color: var(--grey-500);
     font-size: var(--fontSize-1);
     font-weight: var(--font-semibold);
@@ -51,6 +53,25 @@ const BlogCardStyles = styled.article`
   }
 `
 
+const BlogCardGrid = styled.div`
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  justify-items: start;
+`
+
+type BlogCardProps = {
+  backgroundColor: string
+  margin: string
+  padding: string
+  slug: string
+  date: string
+  description: string
+  excerpt: string
+  tags: string
+  title: string
+}
+
 const BlogCard = ({
   backgroundColor,
   margin,
@@ -61,7 +82,7 @@ const BlogCard = ({
   excerpt,
   tags,
   title,
-}) => {
+}: BlogCardProps) => {
   return (
     <BlogCardStyles
       backgroundColor={backgroundColor}
@@ -73,25 +94,27 @@ const BlogCard = ({
       style={{ "--margin": margin }}
     >
       <Link to={slug} itemProp="url">
-        <header>
-          <H4>
-            <span itemProp="headline">{title}</span>
-          </H4>
-          {tags.map((tag, i) => (
-            <Tag key={i}>{tag}</Tag>
-          ))}
-          <br />
-          <div className="small">{date}</div>
-        </header>
-        <section>
-          <p
-            dangerouslySetInnerHTML={{
-              __html: description || excerpt,
-            }}
-            itemProp="description"
-          />
+        <BlogCardGrid>
+          <header>
+            <H4>
+              <span itemProp="headline">{title}</span>
+            </H4>
+            {tags.map((tag, i) => (
+              <Tag key={i}>{tag}</Tag>
+            ))}
+            <br />
+            <div className="date">{date}</div>
+          </header>
+          <section>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: description || excerpt,
+              }}
+              itemProp="description"
+            />
+          </section>
           <Button>Read More</Button>
-        </section>
+        </BlogCardGrid>
       </Link>
     </BlogCardStyles>
   )
