@@ -173,6 +173,7 @@ const Navbar = () => {
             onClick={toggle}
             onKeyPress={toggleKeyPress}
             type="button"
+            aria-label="Open"
           >
             <svg className="nav-svg" viewBox="0 0 24 24">
               <path
@@ -189,6 +190,7 @@ const Navbar = () => {
             onKeyPress={toggleKeyPress}
             type="button"
             className="nav-close nav-btn align-end"
+            aria-label="Close"
           >
             <svg className="nav-svg" viewBox="0 0 24 24">
               <path

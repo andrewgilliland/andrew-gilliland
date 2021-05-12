@@ -50,13 +50,16 @@ const Footer = () => {
     <FooterStyles>
       <Container>
         <Social>
-          <a href="https://twitter.com/droidgilliland">
+          <a href="https://twitter.com/droidgilliland" aria-label="Twitter">
             <FaTwitter />
           </a>
-          <a href="https://github.com/andrewgilliland">
+          <a href="https://github.com/andrewgilliland" aria-label="GitHub">
             <FaGithub />
           </a>
-          <a href="https://www.linkedin.com/in/andrew-gilliland-a89b8919a/">
+          <a
+            href="https://www.linkedin.com/in/andrew-gilliland-a89b8919a/"
+            aria-label="LinkedIn"
+          >
             <FaLinkedin />
           </a>
         </Social>
