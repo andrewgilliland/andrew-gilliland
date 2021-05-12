@@ -15,18 +15,19 @@ export const H2 = styled.h2`
 `
 
 export const H3 = styled.h3`
+  color: var(--grey-050);
+  font-size: var(--fontSize-3);
+  font-weight: var(--font-bold);
+  transition: all 0.3s ease;
+`
+
+export const H4 = styled.h4`
   color: var(--blue-050);
   font-size: 24px;
   letter-spacing: var(--tracking-wide);
   margin-bottom: var(--spacing-8);
 `
 
-export const H4 = styled.h4`
-  color: var(--grey-050);
-  font-size: var(--fontSize-3);
-  font-weight: var(--font-bold);
-  transition: all 0.3s ease;
-`
 
 export const Copy = styled.p`
   font-size: 18px;

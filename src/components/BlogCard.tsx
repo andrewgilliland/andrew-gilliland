@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
-import { H4 } from "./Typography"
+import { H3 } from "./Typography"
 import Button from "./Button"
 import Tag from "./Tag"
 
@@ -23,7 +23,7 @@ const BlogCardStyles = styled.article`
     margin-bottom: var(--spacing-4);
   }
 
-  h4 {
+  h3 {
     margin-bottom: var(--spacing-2);
   }
 
@@ -41,7 +41,7 @@ const BlogCardStyles = styled.article`
   }
 
   &:hover {
-    h4 {
+    h3 {
       color: var(--grey-300);
     }
   }
@@ -96,9 +96,9 @@ const BlogCard = ({
       <Link to={slug} itemProp="url">
         <BlogCardGrid>
           <header>
-            <H4>
+            <H3>
               <span itemProp="headline">{title}</span>
-            </H4>
+            </H3>
             {tags.map((tag, i) => (
               <Tag key={i}>{tag}</Tag>
             ))}
