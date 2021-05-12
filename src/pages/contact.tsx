@@ -1,4 +1,5 @@
 import React from "react"
+import { PageProps } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -6,9 +7,9 @@ import ContactForm from "../components/ContactForm"
 import { H1 } from "../components/Typography"
 import { Container } from "../components/Layout/Layout"
 
-const ContactPage = ({ data, location }) => {
+const ContactPage: React.FC<PageProps> = ({ data, location }) => {
   return (
-    <Layout location={location}>
+    <Layout title="Contact" location={location}>
       <SEO title="Contact" />
       <Container>
         <H1>Get in Touch</H1>
