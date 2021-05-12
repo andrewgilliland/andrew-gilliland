@@ -7,7 +7,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BubbleButton from "../components/BubbleButton"
 import BlogCard from "../components/BlogCard"
-import { H3 } from "../components/Typography"
+import { H2 } from "../components/Typography"
 import RainbowHeading from "../components/RainbowHeading"
 
 const HeroSection = styled.section`
@@ -98,7 +98,7 @@ const IndexPage = ({ data, location }) => {
 
       <Section>
         <Container>
-          <H3>Recently Published</H3>
+          <H2>Recently Published</H2>
           {posts.map((post, index) => {
             const title = post.frontmatter.title || post.fields.slug
             return (
