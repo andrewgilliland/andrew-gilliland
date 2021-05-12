@@ -1,4 +1,5 @@
 import React from "react"
+import { PageProps, Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -6,9 +7,9 @@ import { Wrapper } from "../components/Layout/Layout"
 import { H1, Copy } from "../components/Typography"
 import ExternalLink from "../components/ExternalLink"
 
-const AboutPage = ({ data, location }) => {
+const AboutPage: React.FC<PageProps> = ({ location }) => {
   return (
-    <Layout location={location}>
+    <Layout title="About" location={location}>
       <SEO title="About" />
 
       <Wrapper>
@@ -19,11 +20,16 @@ const AboutPage = ({ data, location }) => {
           currently work mainly with React on the front end and Node.js on the
           back end, but always enjoy implementing new technologies. In my spare
           time, I help organize{" "}
-          <ExternalLink href="https://www.pensacoladevs.com/">
+          <ExternalLink
+            color="var(--purple-500)"
+            href="https://www.pensacoladevs.com/"
+          >
             Pensacola Developers
           </ExternalLink>
           , I am an{" "}
-          <ExternalLink href="https://www.acsm.org/">ACSM</ExternalLink>{" "}
+          <ExternalLink color="var(--purple-500)" href="https://www.acsm.org/">
+            ACSM
+          </ExternalLink>{" "}
           Certified Personal trainer, enjoy woodworking and a music aficionado.
         </Copy>
       </Wrapper>
