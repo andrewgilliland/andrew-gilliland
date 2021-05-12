@@ -5,6 +5,12 @@ import styled from "styled-components"
 import Navbar from "./Navbar"
 import Footer from "./Footer"
 
+const LayoutStyles = styled.div`
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+`
+
 const Main = styled.main`
   margin: var(--spacing-10) 0 var(--spacing-16) 0;
 `
@@ -14,11 +20,11 @@ const Layout = ({ location, title, children }) => {
   const isRootPath = location.pathname === rootPath
 
   return (
-    <div data-is-root-path={isRootPath}>
+    <LayoutStyles data-is-root-path={isRootPath}>
       <Navbar />
       <Main>{children}</Main>
       <Footer />
-    </div>
+    </LayoutStyles>
   )
 }
 
