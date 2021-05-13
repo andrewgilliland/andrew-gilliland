@@ -67,4 +67,5 @@ Here you can set hasFetchedData to false and update it to true when code inside 
 Want to dig a little deeper into the useEffect hook, check out these articles!
 
 [A Complete Guide to useEffect](https://overreacted.io/a-complete-guide-to-useeffect/)
+
 [Using the Effect Hook](https://reactjs.org/docs/hooks-effect.html)
