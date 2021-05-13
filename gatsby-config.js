@@ -12,6 +12,12 @@ module.exports = {
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GATSBY_GOOGLE_ANALYTICS_TRACKING_ID,
+      },
+    },
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -52,12 +58,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: `G-RQ3CZ12XWD`,
-      },
-    },
+
     `gatsby-plugin-feed-mdx`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -71,7 +72,6 @@ module.exports = {
         icon: `content/assets/andrew-gilliland-icon.png`,
       },
     },
-
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
