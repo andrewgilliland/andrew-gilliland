@@ -10,8 +10,8 @@ const BlogPostStyles = styled.article`
   margin: 0 auto;
 
   h1 {
-    color: var(--grey-050);
-    margin-bottom: var(--spacing-2);
+    color: var(--pink-vivid-500);
+    margin-top: var(--spacing-2);
   }
 
   h2,
@@ -19,17 +19,18 @@ const BlogPostStyles = styled.article`
   h4,
   h5,
   h6 {
-    color: var(--grey-050);
-    margin-bottom: var(--spacing-4);
+    color: var(--yellow-vivid-500);
+    margin-top: var(--spacing-10);
   }
 
   p {
     font-size: var(--fontSize-2);
+    margin-top: var(--spacing-5);
     line-height: var(--lineHeight-relaxed);
-    margin-bottom: var(--spacing-10);
   }
 
   a {
+    margin-top: var(--spacing-1);
     color: var(--purple-vivid-500);
     font-weight: var(--font-semibold);
     transition: box-shadow 400ms ease 0s;
@@ -38,6 +39,14 @@ const BlogPostStyles = styled.article`
       transition: box-shadow 100ms ease 0s;
       box-shadow: 0px 2px 0px var(--purple-vivid-500);
     }
+  }
+
+  pre {
+    background-color: var(--black);
+    border: 2px solid var(--purple-500);
+    border-radius: var(--rounded-md);
+    margin-top: var(--spacing-5);
+    padding: var(--spacing-4);
   }
 
   ul {
