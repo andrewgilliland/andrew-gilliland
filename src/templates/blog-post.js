@@ -19,7 +19,7 @@ const BlogPostStyles = styled.article`
   h4,
   h5,
   h6 {
-    color: var(--yellow-vivid-500);
+    color: var(--yellow-vivid-400);
     margin-top: var(--spacing-10);
   }
 
@@ -52,6 +52,13 @@ const BlogPostStyles = styled.article`
     border-radius: var(--rounded-md);
     margin-top: var(--spacing-5);
     padding: var(--spacing-4);
+
+    overflow-x: auto;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
   }
 
   ul {
