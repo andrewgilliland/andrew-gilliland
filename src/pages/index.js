@@ -62,6 +62,7 @@ const Section = styled.section`
 const IndexPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMdx.nodes
+  
 
   if (posts.length === 0) {
     return (
