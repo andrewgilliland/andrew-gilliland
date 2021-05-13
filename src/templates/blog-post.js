@@ -41,8 +41,13 @@ const BlogPostStyles = styled.article`
     }
   }
 
+  code {
+    background-color: var(--grey-1000);
+    box-shadow: none;
+  }
+
   pre {
-    background-color: var(--black);
+    background-color: var(--grey-1000);
     border: 2px solid var(--purple-500);
     border-radius: var(--rounded-md);
     margin-top: var(--spacing-5);
