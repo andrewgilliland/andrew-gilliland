@@ -10,8 +10,9 @@ const BlogPostStyles = styled.article`
   margin: 0 auto;
 
   h1 {
-    color: var(--pink-vivid-500);
+    color: var(--grey-050);
     margin-top: var(--spacing-2);
+    text-shadow: 2px 2px 0 var(--pink-vivid-500);
   }
 
   h2,

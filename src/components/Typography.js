@@ -3,6 +3,7 @@ import styled from "styled-components"
 export const H1 = styled.h1`
   color: var(--grey-050);
   letter-spacing: var(--tracking-wide);
+  text-shadow: 2px 2px 0 var(--pink-vivid-500);
   margin-bottom: var(--spacing-8);
 `
 export const H2 = styled.h2`
@@ -27,7 +28,6 @@ export const H4 = styled.h4`
   letter-spacing: var(--tracking-wide);
   margin-bottom: var(--spacing-8);
 `
-
 
 export const Copy = styled.p`
   font-size: 18px;

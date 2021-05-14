@@ -14,7 +14,7 @@ const BlogCardStyles = styled.article`
   padding: ${props => props.padding || "var(--spacing-8)"};
   background-color: ${props => props.backgroundColor || "transparent"};
   cursor: pointer;
-  transition: 0.5s box-shadow ease, 0.5s border-color ease;
+  transition: 0.3s box-shadow ease, 0.3s border-color ease;
 
   a {
     color: var(--grey-050);
