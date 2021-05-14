@@ -14,6 +14,7 @@ const BlogCardStyles = styled.article`
   padding: ${props => props.padding || "var(--spacing-8)"};
   background-color: ${props => props.backgroundColor || "transparent"};
   cursor: pointer;
+  transition: 0.5s box-shadow ease, 0.5s border-color ease;
 
   a {
     color: var(--grey-050);
@@ -23,15 +24,11 @@ const BlogCardStyles = styled.article`
     margin-bottom: var(--spacing-4);
   }
 
-  h3 {
-    margin-bottom: var(--spacing-2);
-  }
-
   .date {
     color: var(--grey-500);
     font-size: var(--fontSize-1);
     font-weight: var(--font-semibold);
-    margin-top: 0.5rem;
+    margin-top: var(--spacing-1);
   }
 
   p {
@@ -41,9 +38,8 @@ const BlogCardStyles = styled.article`
   }
 
   &:hover {
-    h3 {
-      color: var(--grey-300);
-    }
+    border-color: var(--grey-100);
+    box-shadow: none;
   }
 
   @media (min-width: 425px) {
@@ -96,13 +92,12 @@ const BlogCard = ({
       <Link to={slug} itemProp="url">
         <BlogCardGrid>
           <header>
-            <H3>
-              <span itemProp="headline">{title}</span>
-            </H3>
             {tags.map((tag, i) => (
               <Tag key={i}>{tag}</Tag>
             ))}
-            <br />
+            <H3>
+              <span itemProp="headline">{title}</span>
+            </H3>
             <div className="date">{date}</div>
           </header>
           <section>
