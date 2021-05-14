@@ -9,6 +9,7 @@ const ContactFormStyles = styled.form`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: var(--spacing-5);
+  margin-top: var(--spacing-10);
 
   input {
     background: var(--grey-900);
