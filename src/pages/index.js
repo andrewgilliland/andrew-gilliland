@@ -9,6 +9,9 @@ import BubbleButton from "../components/BubbleButton"
 import BlogCard from "../components/BlogCard"
 import { H2 } from "../components/Typography"
 import RainbowHeading from "../components/RainbowHeading"
+import { screen } from "../styles/mediaQueries"
+
+const { mobileL } = screen
 
 const HeroSection = styled.section`
   background: var(--backgroundColor);
@@ -40,7 +43,7 @@ const Copy = styled.p`
   font-size: var(--fontSize-2);
   letter-spacing: 0.2px;
 
-  @media (min-width: 425px) {
+  @media (min-width: ${mobileL}px) {
     max-width: 25em;
   }
 `
@@ -62,7 +65,6 @@ const Section = styled.section`
 const IndexPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMdx.nodes
-  
 
   if (posts.length === 0) {
     return (

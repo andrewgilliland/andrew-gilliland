@@ -15,7 +15,7 @@ const ContactPage: React.FC<PageProps> = ({ data, location }) => {
       <Wrapper>
         <H1>Get in Touch</H1>
         <Copy>
-          Are looking for a Developer to join your team? Or you are looking for
+          Looking for a Developer to join your team? Needing
           someone to help you turn your website idea into reality? Or possibly you
           just want to chat about the weather? Feel free to reach out!
         </Copy>
