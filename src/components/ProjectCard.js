@@ -6,6 +6,7 @@ import Tag from "./Tag"
 import BubbleButton from "./BubbleButton"
 
 const ProjectCardStyles = styled.div`
+  display: grid;
   border: 2px solid;
   border-color: var(--pink-vivid-500);
   border-radius: var(--rounded-md);
