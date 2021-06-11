@@ -15,7 +15,12 @@ const ProjectsPage: React.FC<PageProps> = ({ data, location }) => {
       <Container>
         <H1>Projects</H1>
         <Grid>
-          <ProjectCard title="React-Fit">
+          <ProjectCard
+            tag="Next.js"
+            title="React-Fit"
+            link="https://react-fit.vercel.app/"
+            repoName="react-fit"
+          >
             React-Fit is a SaaS modeled application. This application is built
             with{" "}
             <ExternalLink color="var(--purple-500)" href="https://nextjs.org/">
@@ -42,6 +47,45 @@ const ProjectsPage: React.FC<PageProps> = ({ data, location }) => {
               href="https://tailwindcss.com/"
             >
               TailwindCSS
+            </ExternalLink>
+            .
+          </ProjectCard>
+
+          <ProjectCard
+            tag="Gatsby"
+            title="Slick's Slices"
+            link="https://slicks-slices-pensacola.netlify.app/"
+            repoName="slicks-slices"
+          >
+            Slick's Slices is a web application built with{" "}
+            <ExternalLink
+              color="var(--purple-500)"
+              href="https://gatsbyjs.com/"
+            >
+              Gatsby
+            </ExternalLink>
+            . The project is hosted on{" "}
+            <ExternalLink color="var(--purple-500)" href="https://netlify.com/">
+              Netlify
+            </ExternalLink>
+            . This project uses{" "}
+            <ExternalLink color="var(--purple-500)" href="https://sanity.io/">
+              Sanity
+            </ExternalLink>{" "}
+            to manage content. To handle orders, this application utilizes
+            Netlify Functions to send email with{" "}
+            <ExternalLink
+              color="var(--purple-500)"
+              href="https://nodemailer.com/"
+            >
+              Nodemailer
+            </ExternalLink>
+            . Styles for the application are done with{" "}
+            <ExternalLink
+              color="var(--purple-500)"
+              href="https://styled-components.com/"
+            >
+              Styled Components
             </ExternalLink>
             .
           </ProjectCard>

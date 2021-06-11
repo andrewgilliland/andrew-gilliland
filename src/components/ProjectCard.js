@@ -10,11 +10,6 @@ const ProjectCardStyles = styled.div`
   border-color: var(--pink-vivid-500);
   border-radius: var(--rounded-md);
   box-shadow: 2px 2px 0 var(--pink-vivid-500);
-  max-width: 100%;
-
-  @media only screen and (min-width: 426px) {
-    max-width: 50%;
-  }
 
   .card-head {
     display: flex;
@@ -58,20 +53,20 @@ const GithubStyles = styled.div`
   }
 `
 
-const ProjectCard = ({ children, title }) => {
+const ProjectCard = ({ children, title, link, repoName, tag }) => {
   return (
     <ProjectCardStyles>
       <div className="card-head">
         <h3>{title}</h3>
-        <Tag marginBottom="0">Next.js</Tag>
+        <Tag marginBottom="0">{tag}</Tag>
       </div>
       <div className="card-body">{children}</div>
       <div className="card-footer">
-        <a href="https://react-fit.vercel.app/">
+        <a href={link}>
           <BubbleButton marginTop="none">See it Live</BubbleButton>
         </a>
         <GithubStyles>
-          <a href="https://github.com/andrewgilliland/react-fit">
+          <a href={`https://github.com/andrewgilliland/${repoName}`}>
             <FaGithub />
           </a>
         </GithubStyles>
