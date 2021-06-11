@@ -257,7 +257,6 @@ table thead tr th {
 /* Link */
 
 a {
-  color: var(--white);
   text-decoration: none;
 }
 

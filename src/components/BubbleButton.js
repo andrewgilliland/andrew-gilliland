@@ -25,6 +25,10 @@ const BubbleButtonStyles = styled.button`
       opacity: 1;
     }
   }
+
+  a {
+    color: var(--color, var(--grey-050));
+  }
 `
 
 const HoverArrow = styled.svg`
