@@ -53,8 +53,8 @@ const ProjectsPage: React.FC<PageProps> = ({ data, location }) => {
 
           <ProjectCard
             tag="Gatsby"
-            title="Slick's Slices"
-            link="https://slicks-slices-pensacola.netlify.app/"
+            title="Biff's Brews"
+            link="https://biffs-brews.netlify.app/"
             repoName="slicks-slices"
           >
             Slick's Slices is a web application built with{" "}
