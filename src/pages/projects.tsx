@@ -55,9 +55,9 @@ const ProjectsPage: React.FC<PageProps> = ({ data, location }) => {
             tag="Gatsby"
             title="Biff's Brews"
             link="https://biffs-brews.netlify.app/"
-            repoName="slicks-slices"
+            repoName="biffs-brews"
           >
-            Slick's Slices is a web application built with{" "}
+            Biff's Brews is a web application built with{" "}
             <ExternalLink
               color="var(--purple-500)"
               href="https://gatsbyjs.com/"

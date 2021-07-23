@@ -16,7 +16,7 @@ const AboutPage: React.FC<PageProps> = ({ location }) => {
       <Wrapper>
         <H1>About Me</H1>
         <Copy>
-          Hi👋, I'm Andrew. I'm a web developer from Bloomington, Illinois. I am
+          Hi👋, I'm Andrew. I'm a web developer from Normal, Illinois. I am
           passionate about constantly learning and using new web technologies. I
           currently work mainly with React on the front end and Node.js on the
           back end, but always enjoy implementing new technologies. In my spare
