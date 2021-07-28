@@ -12,7 +12,7 @@ export const H2 = styled.h2`
   font-weight: var(--font-semibold);
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-bottom: var(--spacing-12);
+  margin-top: var(--spacing-6);
 `
 
 export const H3 = styled.h3`
@@ -32,4 +32,13 @@ export const H4 = styled.h4`
 export const Copy = styled.p`
   font-size: 18px;
   letter-spacing: 0.2px;
+`
+
+export const UL = styled.ul`
+  margin-top: 1rem;
+
+  li {
+    font-weight: var(--font-semibold);
+    margin-top: 0.5rem;
+  }
 `

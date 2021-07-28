@@ -35,7 +35,7 @@ const AboutPage: React.FC<PageProps> = ({ location }) => {
         </Copy>
         <CenterContentStyles>
           <BubbleButton>
-            <a href="https://www.notion.so/anvilofcrom/Resume-e726ff3b64e841de86ce23de5a4ef0af">
+            <a href="https://www.notion.so/andrewgilliland/Resume-e726ff3b64e841de86ce23de5a4ef0af">
               Resume
             </a>
           </BubbleButton>
