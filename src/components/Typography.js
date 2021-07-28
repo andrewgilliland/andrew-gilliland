@@ -38,7 +38,7 @@ export const UL = styled.ul`
   margin-top: 1rem;
 
   li {
-    font-weight: var(--font-semibold);
+    font-size: 18px;
     margin-top: 0.5rem;
   }
 `
