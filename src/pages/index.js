@@ -106,7 +106,7 @@ const IndexPage = ({ data, location }) => {
             const title = post.frontmatter.title || post.fields.slug
             return (
               <BlogCard
-                margin="0 0 var(--spacing-12) 0"
+                margin="var(--spacing-10) 0"
                 padding="var(--spacing-8)"
                 key={index}
                 slug={post.fields.slug}
