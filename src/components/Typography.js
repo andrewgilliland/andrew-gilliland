@@ -53,3 +53,13 @@ export const UL = styled.ul`
     font-size: 1.5rem;
   }
 `
+
+export const BlendCopy = styled.p`
+  font-size: 2.25rem;
+  font-weight: 600;
+  min-width: 50px;
+  background-image: linear-gradient(to bottom, #8719e0, #0967d2);
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+`
