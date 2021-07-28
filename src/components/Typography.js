@@ -36,9 +36,20 @@ export const Copy = styled.p`
 
 export const UL = styled.ul`
   margin-top: 1rem;
+  list-style: disc;
 
   li {
     font-size: 18px;
     margin-top: 0.5rem;
+    padding-left: 0.1rem;
+  }
+
+  li::marker {
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--pink-vivid-500);
+    font-size: 1.5rem;
   }
 `
