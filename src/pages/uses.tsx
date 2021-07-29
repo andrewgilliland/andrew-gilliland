@@ -4,7 +4,7 @@ import { PageProps } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Wrapper } from "../components/Layout/Layout"
-import { H1, H2, Copy, UL, BlendCopy } from "../components/Typography"
+import { H1, H2, Copy, UL } from "../components/Typography"
 
 const AboutPage: React.FC<PageProps> = ({ location }) => {
   return (
@@ -48,9 +48,6 @@ const AboutPage: React.FC<PageProps> = ({ location }) => {
             <li>Notion - 📝 - My note-taking app of choice.</li>
           </UL>
         </div>
-        <BlendCopy>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, inventore eligendi nesciunt fugit, distinctio tempore, in voluptate cupiditate excepturi atque nihil delectus recusandae assumenda sed quo magni aut ad voluptatem modi? Culpa, inventore. Tenetur laudantium provident nulla velit distinctio ducimus aliquid explicabo eius atque officiis? Dignissimos tenetur iusto minima corrupti.
-        </BlendCopy>
       </Wrapper>
     </Layout>
   )
