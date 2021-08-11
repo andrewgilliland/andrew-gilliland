@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-
 import useRainbow from "../hooks/useRainbow"
 
 const RainbowHeading = ({ children, intervalDelay = 1300, ...delegated }) => {
