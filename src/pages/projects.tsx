@@ -52,6 +52,38 @@ const ProjectsPage: React.FC<PageProps> = ({ data, location }) => {
           </ProjectCard>
 
           <ProjectCard
+            tag="Next.js"
+            title="Strange Wilderness Granola"
+            link="https://strangewilderness.netlify.app/"
+            repoName="next-ecommerce-app"
+          >
+            Strange Wilderness Granola is an ecommerce website built with{" "}
+            <ExternalLink color="var(--purple-500)" href="https://nextjs.org/">
+              Next.js
+            </ExternalLink>
+            . The project is hosted on{" "}
+            <ExternalLink color="var(--purple-500)" href="https://netlify.com/">
+              Netlify
+            </ExternalLink>
+            . This project uses{" "}
+            <ExternalLink
+              color="var(--purple-500)"
+              href="https://wordpress.org/"
+            >
+              WordPress
+            </ExternalLink>{" "}
+            to manage product data. Customized shopping cart UI and payment
+            proccessing is integrated into the website with{" "}
+            <ExternalLink
+              color="var(--purple-500)"
+              href="https://snipcart.com/"
+            >
+              Snipcart
+            </ExternalLink>
+            .
+          </ProjectCard>
+
+          <ProjectCard
             tag="Gatsby"
             title="Biff's Brews"
             link="https://biffs-brews.netlify.app/"
