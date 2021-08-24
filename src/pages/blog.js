@@ -1,22 +1,48 @@
-import React from "react"
+import React, { useState } from "react"
 import { graphql } from "gatsby"
+import Fuse from "fuse.js"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BlogCard from "../components/BlogCard"
 import { H1 } from "../components/Typography"
 import { Container, Grid } from "../components/Layout/Layout"
+import { SearchStyles } from "../components/Search"
 
 const BlogPage = ({ data, location }) => {
+  const [query, setQuery] = useState()
   const posts = data.allMdx.nodes
+  let activePosts = posts
+
+  function handleOnSearch(event) {
+    const value = event.currentTarget.value
+    setQuery(value)
+  }
+
+  const fuse = new Fuse(activePosts, {
+    keys: ["frontmatter.title","frontmatter.tags"],
+  })
+
+  if (query) {
+    const results = fuse.search(query)
+    activePosts = results.map(({ item }) => item)
+  }
 
   return (
     <Layout location={location}>
       <SEO title="Blog" />
       <Container>
         <H1>Latest Articles</H1>
+
+        <SearchStyles>
+          <h2>Search</h2>
+          <form>
+            <input onChange={handleOnSearch} type="search" />
+          </form>
+        </SearchStyles>
+
         <Grid>
-          {posts.map(post => {
+          {activePosts.map(post => {
             const title = post.frontmatter.title || post.fields.slug
             return (
               <BlogCard
