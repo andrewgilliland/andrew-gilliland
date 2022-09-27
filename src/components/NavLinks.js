@@ -43,9 +43,6 @@ const NavLinks = () => {
       <li>
         <Link to="/uses">Uses</Link>
       </li>
-      <li>
-        <Link to="/contact">Contact</Link>
-      </li>
     </NavLinksStyles>
   )
 }
