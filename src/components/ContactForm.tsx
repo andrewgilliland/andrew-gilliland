@@ -3,7 +3,7 @@ import { navigate } from "gatsby-link"
 import { useInput } from "../hooks/useInput"
 import styled from "styled-components"
 
-import BubbleButton from "../components/BubbleButton"
+import BubbleButton from "./BubbleButton"
 
 const ContactFormStyles = styled.form`
   display: grid;

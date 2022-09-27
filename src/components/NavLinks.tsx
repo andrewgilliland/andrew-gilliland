@@ -38,6 +38,9 @@ const NavLinks = () => {
         <Link to="/blog">Blog</Link>
       </li>
       <li>
+        <Link to="/fitness">Fitness</Link>
+      </li>
+      <li>
         <Link to="/about">About</Link>
       </li>
       <li>
